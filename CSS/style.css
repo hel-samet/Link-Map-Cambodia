@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Battambang:wght@300;400;700;900&family=Dangrek&family=EB+Garamond:wght@500&family=Edu+SA+Beginner&family=Fira+Sans+Condensed:wght@600&family=Hanuman:wght@400;900&family=Koulen&family=Lobster&family=Montserrat:ital,wght@1,700;1,900&family=Moul&family=Noto+Sans+Khmer:wght@400;500&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,700&family=Sora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Battambang:wght@300;400;700;900&family=Dangrek&family=EB+Garamond:wght@500&family=Edu+SA+Beginner&family=Fira+Sans+Condensed:wght@600&family=Hanuman:wght@400;900&family=Koulen&family=Lobster&family=Montserrat:ital,wght@1,700;1,900&family=Moul&family=Moulpali&family=Noto+Sans+Khmer:wght@400;500&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,700&family=Sora:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+}
+
+.text h1 {
+    text-shadow: 0 0 10px #0000,
+        0 0 10px #0000,
+        0 0 20px #0000,
+        0 0 40px #0000,
+        0 0 60px #0000,
+        0 0 80px #0000,
+        0 0 120px #0000;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(255, 0, 0);
+    font-family: 'Moul', cursive;
+    padding: 20px;
+
+}
+.text {
+    border-radius: 40px;
+    position: relative;
+    background: white;
+    margin-left: 200px;
+    width: 70%;
+}
+.text:before,
+.text:after {
+    border-radius: 40px;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff0000, #ffff00, #ffff00, #ff0000, #ff0000,
+            #0800ff, #0800ff, #0800ff, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+    animation: steam 60s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(10px);
+
+}
+
+.logo {
+    background-color: #1f004c;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.logo h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Moulpali', sans-serif;
+}
+
+.cover {
+    padding: 0;
+    margin: 0;
+}
+
+.cover img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.texts {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.texts button {
+    padding: 7px 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    background: #fe8c00;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Moulpali', sans-serif;
+    font-weight: 400;
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    background: linear-gradient(to right, #f83600, #fe8c00);
+
+
+
+}
